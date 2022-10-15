@@ -27,7 +27,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api',
     'registration_api',
-    'rest_framework'
+    'rest_framework',
+    'rest_framework.authtoken',
+    'dj_rest_auth'
 ]
 
 MIDDLEWARE = [
@@ -108,8 +110,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+AUTH_USER_MODEL = 'api.CustomUser'
+
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
