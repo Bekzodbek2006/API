@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'allauth.account',
 ]
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # if real project smtp
 SITE_ID = 1
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'bekzodbek06062006@gmail.com'
