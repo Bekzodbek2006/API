@@ -24,7 +24,6 @@ SECRET_KEY = 'django-insecure-_u1_ups--ysqwr8rx==74jeg7ezq+cf#o%i@kn@w-rm(9ep9)-
 
 ALLOWED_HOSTS = ["*"]
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -134,6 +133,10 @@ LOGOUT_REDIRECT_URL = '/'
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS=(
+    BASE_DIR / "static",
+)
 
 STATIC_ROOT = BASE_DIR / 'staicfiles'
 
